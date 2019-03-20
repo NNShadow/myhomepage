@@ -1,0 +1,123 @@
+.MoFang {
+    height: 112.5px;
+    width: 112.5px;
+    margin: 56.25px;
+    position: absolute;
+    left: 143px;
+    top: 515px;
+}
+
+.box {
+    width: 112.5px;
+    height: 112.5px;
+    /**控制子元素三维转换*/
+    transform-style: preserve-3d;
+    animation: do 6s linear infinite;
+}
+
+@keyframes do {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.box-page {
+    width: 112.5px;
+    height: 112.5px;
+    /**位置初始化*/
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.top {
+    transform: translateZ(56.25px);
+}
+
+.bottom {
+    transform: translateZ(-56.25px) rotateX(180deg);
+}
+
+.left {
+    transform: translateX(-56.25px) rotateY(-90deg);
+}
+
+.right {
+    transform: translateX(56.25px) rotateY(90deg);
+}
+
+.before {
+    transform: translateY(56.25px) rotateX(-90deg);
+}
+
+.after {
+    transform: translateY(-56.25px) rotateX(90deg);
+}
+
+.box-page div:nth-child(1) {
+    animation: a1 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(2) {
+    animation: a2 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(3) {
+    animation: a1 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(4) {
+    animation: a2 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(5) {
+    animation: a1 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(6) {
+    animation: a2 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(7) {
+    animation: a1 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(8) {
+    animation: a2 4s ease-in infinite 1s;
+}
+
+.box-page div:nth-child(9) {
+    animation: a1 4s ease-in infinite 1s;
+}
+
+@keyframes a1 {
+    0% {
+        transform: translateZ(0px) scale(1) rotateY(0deg);
+    }
+    35% {
+        transform: translateZ(0px) scale(1) rotateY(720deg);
+    }
+    65% {
+        transform: translateZ(0px) scale(1) rotateY(720deg);
+    }
+    100% {
+        transform: translateZ(0px) scale(1) rotateY(0deg);
+    }
+}
+
+@keyframes a2 {
+    0% {
+        transform: translateZ(0px) scale(1) rotateY(0deg);
+    }
+    35% {
+        transform: translateZ(0px) scale(1) rotateY(-720deg);
+    }
+    65% {
+        transform: translateZ(0px) scale(1) rotateY(-720deg);
+    }
+    100% {
+        transform: translateZ(0px) scale(1) rotateY(0deg);
+    }
+}

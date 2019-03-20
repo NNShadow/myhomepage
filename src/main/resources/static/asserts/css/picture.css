@@ -1,0 +1,17 @@
+#p1 img {
+    height: 165px;
+    width: 293px;
+    margin-left: 5px;
+    border: 1px solid #0cf;
+    padding: 5px;
+    float: right;
+}
+
+#p2 img {
+    height: 262px;
+    width: 178px;
+    margin-left: 5px;
+    border: 1px solid #0cf;
+    padding: 5px;
+    float: right;
+}

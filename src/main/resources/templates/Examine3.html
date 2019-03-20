@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>游戏注册</title>
+</head>
+<style>
+    body {
+        margin: 20px;
+        background-color: black;
+        font-family: KaiTi;
+        color: white;
+    }
+
+    #box {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        font-size: 20px;
+        border: 2px solid white;
+    }
+
+    #box img {
+        height: 25px;
+        width: 25px;
+        position: relative;
+        top: 8px;
+    }
+
+    #true {
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+<body>
+<div id="box">
+    <h1>游戏注册</h1>
+    <hr/>
+    <form style="align:center">
+        账户：<input type="text" name="userName"/>
+        <br/>
+        密码：<input type="password" name="userPsd"/>
+        <hr>
+        <script src="../static/js/random.js" th:src="@{/asserts/js/random.js}"></script>
+        角色姓名：
+        <input type="text" id="myName"/>
+        <img src="../static/picture/random.jpg" th:src="@{/asserts/picture/random.jpg}" style="cursor:pointer"
+             onclick="getName()">
+        <hr>
+        性别：
+        男 <input type="radio" value="boy" name="gender" checked="checked"/>
+        女 <input type="radio" value="girl" name="gender"/>
+        <hr>
+        主职业：
+        <select>
+            <option selected="selected">射手</option>
+            <option>战士</option>
+            <option>法师</option>
+            <option>牧师</option>
+            <option>骑士</option>
+            <option>散人</option>
+        </select>
+        <br/>
+        生活职业（多选）：<br>
+        <input type="checkbox" value="1" name="mining"/>采矿
+        <input type="checkbox" value="2" name="smelting"/>炼器
+        <input type="checkbox" value="3" name="collecting"/>采集
+        <input type="checkbox" value="4" name="sewing"/>缝纫
+        <input type="checkbox" value="5" name="feeding"/>饲养
+        <input type="checkbox" value="6" name="cooking"/>烹饪
+        <br>注：默认熟练度将平分在所选职业上。
+        <br/><br>
+        <div id="true">
+            <input type="button" value="提交" id="test" onclick="Test()" name="submitBtn"/>
+            <input type="reset" value="重置" name="return"/>
+            <input type="button" value="返回" onclick="window.location.href='Examine2.html'">
+        </div>
+    </form>
+</div>
+</body>
+</html>

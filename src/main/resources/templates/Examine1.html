@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{/asserts/css/main.css}">
+    <link rel="stylesheet" href="../static/css/MoFang.css" th:href="@{/asserts/css/MoFang.css}">
+    <link rel="stylesheet" href="../static/css/picture.css" th:href="@{/asserts/css/picture.css}">
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.2.1/css/bootstrap.css}" rel="stylesheet">-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #C0C0C0;
+        }
+
+        #tran {
+            position: absolute;
+            left: 200px;
+            top: 750px;
+        }
+
+        #tran a:visited {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="MoFang">
+    <div class="box">
+        <div class="box-page top"></div>
+        <div class="box-page bottom"></div>
+        <div class="box-page left"></div>
+        <div class="box-page right"></div>
+        <div class="box-page before"></div>
+        <div class="box-page after"></div>
+    </div>
+</div>
+<script type="text/javascript" src="asserts/js/MoFang.js" th:src="@{/asserts/js/MoFang.js}"></script>
+
+
+<div id="container">
+    <div id="header">
+        个人主页
+    </div>
+
+    <div id="use">
+        <div id="head">
+            <form>
+                <input type="text">
+                <input type="reset" value="重置" name="return"/>
+                <a href="#">百度一下</a>
+                <script type="text/javascript" src="asserts/js/index.js" th:src="@{/asserts/js/index.js}"></script>
+            </form>
+        </div>
+    </div>
+
+    <!--主要部分-->
+    <div id="main">
+        <!--不使用-->
+        <div id="aside0"></div>
+
+
+        <!--常用网站-->
+        <div id="aside1">
+            <div class="title"><h1>常用网站</h1></div>
+            <hr style="height:1px;">
+
+            <tr>
+                <td><h2>精神食粮</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <li><a href="http://www.w3school.com.cn">web学习</a></li>
+                    <li><a href="https://www.liaoxuefeng.com">廖雪峰git教程</a></li>
+                    <li><a href="https://vjudge.net/group/cumtcs">Online Judge 算法</a></li>
+                    <li><a href="https://www.pigai.org/">批改网</a></li>
+                    <li><a href="https://www.nowcoder.com/">牛客网</a></li>
+                    <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+                    <li><a href="#">等待添加</a></li>
+                </td>
+            </tr>
+            <hr/>
+            <tr>
+                <td><h2>利用主义</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://colorhunt.co/">颜色获取</a></li>
+                    <li><a href="http://spring.io">Spring</a></li>
+                    <li><a href="#">等待添加</a></li>
+                </td>
+            </tr>
+            <hr/>
+            <tr>
+                <td><h2>福利专享</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>
+                        <a href="http://jwxt.cumt.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=&_t=1550155006026">教务系统</a>
+                    </li>
+                    <li><a href="https://www.jd.com">京东商城</a></li>
+                    <li><a href="#">等待添加</a></li>
+                </td>
+            </tr>
+        </div>
+
+
+        <!--文本部分-->
+        <div id="content"><h4>日常摘抄</h4>
+            <br/>
+            <div class="y">
+                <div id="p1"><img src="asserts/picture/凡人修仙传.jpg" th:src="@{/asserts/picture/凡人修仙传.jpg}"></div>
+                <h1>凡人修仙传</h1>
+                在忘语写的《凡人修仙传》中，主角韩立为什么被书友亲切的称呼为:韩跑跑？
+                <br/><br/>
+                读过《凡人修仙传》的读者都知道，韩立这一生所期望的便是执着于成仙，对于感情和亲情，书中描述的非常淡漠，有人说这是忘语不擅长写感情戏，有人说这是韩立成仙的必经之路，必须抛却七情六欲。
+                <br/><br/>
+                韩立为人意志坚定，行事低调，不好面子，不逞英雄，心事缜密，心智坚韧这种性格是成仙的必要条件，要知道装×遭雷劈，嚣张活不长，成仙最重要的是什么吗？不是神兽一群，法宝一堆，而是命！要知道命只有一条，不，两条，只有活着才是成仙的最大保障。所以说在修仙界，打得过就打，打不过就跑，为什么韩立老是跑呢？因为韩立老是遇到比他厉害的人，修为比他高的人，当然打不过就跑了。
+                <br/><br/>
+                要知道韩立没有深厚的背景，在无法拼爹，拼妈，拼媳妇，拼师傅的情况下只能数千年如一日的靠自己，在实力显微的情况下，偷偷摸摸，躲躲藏藏这不很正常嘛！
+                <br/><br/>
+                扮猪吃老虎，闷声发大财，这才是强者之路！
+                <br/><br/>
+            </div>
+
+            <div class="x">
+                <div id="p2"><img src="asserts/picture/蛊真人.jpg" th:src="@{/asserts/picture/蛊真人.jpg}"></div>
+                <h1>蛊真人</h1><br>
+                白雪尽皑皑，天地我独行。独行无牵挂，孤影任去来。
+                <br><br>
+                不论是家族、门派还是魔教，不论是这个世界，还是地球，任何的组织都是这样。设立高低位置，明确晋升法度，让组织中人从低位不断地往上爬。因为追逐利润是人之本性，而权位常常使人产生自己高人一等，自己活着比常人更有价值的错觉。
+                <br/><br/>
+                权利二字，就像是吊在毛驴前面的胡萝卜，人们的欲望被它激发，一个个的人为此不断钻营。爬上一层位置，还有更高一层。殊不知，在钻营的过程中，他们的劳动力被压榨，产生的价值被上位者剥削。
+                <br/><br/>
+                “善恶”是强者才能拥有的“余裕”，而不是弱者要强加给强者的义务，甚至是让弱者变成“恶者”，利用弱小去胁迫他人贡献自己的生命安全自己却站在安全的岸上冷嘲热讽。
+                <br/><br/>
+                自由是宝贵的，但是太多的人根本不知道自由的可贵。在小善和大善面前，你选择宁愿小善而失去大善吗？这何尝不是一种虚伪？这何尝不是一种假道学？这何尝不是一种伪善？
+                <br/><br/>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="author">创作者：NPY 未经本人允许禁止转载</div>
+    </div>
+    <br>
+</div>
+
+<div id="tran">
+    <a href="Examine2.html" th:href="@{/page2}">请提出宝贵的意见</a><br/>&nbsp;
+    <img src="asserts/picture/pkq.gif" th:src="@{/asserts/picture/pkq.gif}">
+</div>
+</body>
+</html>

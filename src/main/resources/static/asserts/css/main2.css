@@ -1,0 +1,107 @@
+#header {
+    font-size: 70px;
+    text-align: center;
+    margin: 40px;
+    font-color: #646464;
+    text-shadow: 2px 2px blue;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    background-image: url('../picture/background2.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+form {
+    margin: 40px auto;
+    font-size: 20px;
+}
+
+#content {
+    margin-left: 400px;
+}
+
+table td, th {
+    border: 1px solid black;
+}
+
+#return {
+    height: 50px;
+    line-height: 50px;
+    width: 300px;
+    margin: auto;
+    background-color: silver;
+    border-radius: 5px;
+}
+
+#return h1 a:visited {
+    color: blue;
+}
+
+#return:hover {
+    font-size: 20px;
+    transition: linear 0.5s;
+    animation: myColor 3s linear infinite;
+}
+
+@keyframes myColor {
+    0% {
+        background-color: #D6F8B8;
+    }
+    16.67% {
+        background-color: #ACDEAA;
+    }
+    33.33% {
+        background-color: #8FBBAF;
+    }
+    50.00% {
+        background-color: #6B7B8E;
+    }
+    66.67% {
+        background-color: #8FBBAF;
+    }
+    83.33% {
+        background-color: #ACDEAA;
+    }
+    100% {
+        background-color: #D6F8B8;
+    }
+}
+
+#gg img {
+    height: 225px;
+    width: 150px;
+    margin: 5px;
+    border: 1px solid #0cf;
+    padding: 5px;
+    position: fixed;
+    left: 5px;
+    top: 150px;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+
+#kun img {
+    height: 225px;
+    width: 150px;
+    margin: 5px;
+    border: 1px solid #0cf;
+    padding: 5px;
+    position: fixed;
+    right: 5px;
+    top: 150px;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+
+#gg img:hover {
+    height: 300px;
+    width: 200px;
+}
+
+#kun img:hover {
+    height: 300px;
+    width: 200px;
+}
