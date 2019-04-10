@@ -22,7 +22,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
-                .excludePathPatterns("/index.html", "/", "/user/page1/**");
+                .excludePathPatterns("/index.html", "/", "/user/page1/**", "/webjars/bootstrap/4.2.1/css/bootstrap.css");
     }
 
     @Bean
